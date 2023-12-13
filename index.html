@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the HTML document -->
     <title>Survey Form</title>
+    
+    <!-- Linking an external stylesheet (styles.css) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header section -->
     <header>
+        <!-- Title of the survey form -->
         <h1 id="title">Survey Form</h1>
+        
+        <!-- Description of the survey form -->
         <p id="description">Please take a moment to complete our survey.</p>
     </header>
 
+    <!-- Survey form -->
     <form id="survey-form">
+        <!-- Input field for name -->
         <label for="name" id="name-label">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
+        <!-- Input field for email -->
         <label for="email" id="email-label">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
+        <!-- Input field for age with specified range -->
         <label for="number" id="number-label">Age:</label>
         <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="99" required>
 
+        <!-- Dropdown menu for selecting an option -->
         <label for="dropdown">Select an option:</label>
         <select id="dropdown" name="option">
             <option value="option1">Option 1</option>
@@ -29,6 +43,7 @@
             <option value="option3">Option 3</option>
         </select>
 
+        <!-- Radio button group for choosing one option -->
         <fieldset>
             <legend>Choose one of the following:</legend>
             <label>
@@ -39,6 +54,7 @@
             </label>
         </fieldset>
 
+        <!-- Checkbox group for selecting one or more options -->
         <fieldset>
             <legend>Select one or more of the following:</legend>
             <label>
@@ -52,9 +68,11 @@
             </label>
         </fieldset>
 
+        <!-- Textarea for additional comments -->
         <label for="comments">Additional Comments:</label>
         <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
 
+        <!-- Submit button for submitting the form -->
         <button type="submit" id="submit">Submit</button>
     </form>
 </body>
